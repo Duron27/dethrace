@@ -22,7 +22,7 @@ void debug_printf(const char* fmt, const char* fn, const char* fmt2, ...) {
 void panic_printf(const char* fmt, const char* fn, const char* fmt2, ...) {
     va_list ap;
 
-    FILE* fp = fopen("dethrace.log", "w");
+    FILE* fp = fopen("/storage/emulated/0/Alpha3/dethrace/dethrace.log", "w");
 
     puts("\033[0;31m");
     printf(fmt, fn);
